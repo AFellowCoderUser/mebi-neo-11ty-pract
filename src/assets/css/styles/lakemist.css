@@ -1,0 +1,21 @@
+:root {
+    --mist-link: #a8d2ff;
+    --mist-border: #416392;
+    --mist-dark: #21365c;
+    --mist-darker: #0f162b;
+    
+    --mist-linkother: #1588ff;
+  
+    /**/
+    --neon: var(--mist-link);
+    --link: var(--mist-border);
+    --dark: var(--mist-dark);
+    --darker: var(--mist-darker);
+    
+    --neon-other: var(--mist-neon);
+    --link-other: var(--mist-linkother);
+    --dark-other: var(--mist-dark);
+    --darker-other: var(--mist-darker);
+  }
+  
+  

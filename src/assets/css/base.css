@@ -1,0 +1,242 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+   @font-face {
+    font-family: other-gothic;
+    src: url(/fonts/modified-ms-ui-gothic.ttf);
+  }
+  
+  @font-face {
+    font-family: PixelOperatorMono;
+    src: url(../fonts/PixelOperatorMono.ttf);
+  }
+  
+  :root {
+    /*main colors*/
+    --green-link: #09df77;
+    --green-border: #0b6335;
+    --green-dark: #0c4329;
+    --green-darker: #0c261a;
+    
+    --blue-neon: #526bff;
+    --blue-link: #0929df;
+    --darkblue: #141a3e;
+    --darkblue-black: #0d112b;
+  }
+  
+  html {
+    background: linear-gradient(var(--dark-other), var(--dark));
+    background-attachment: fixed;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  
+  body {
+    color: white;
+    font-family: PixelOperatorMono;
+  }
+  
+  footer {
+    background-color: var(--darker-other);
+    border: 2px solid var(--link);
+    margin-top: 8px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  
+  hr {
+    border: 1px solid var(--link)
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--darker);
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--link);
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--dark);
+  }
+  
+  a:link {
+    color: var(--neon)
+  }
+  a:visited {
+    color: var(--neon)
+  }
+  a:hover {
+    color: var(--link-other);
+  }
+  a:active {
+    color: var(--link-other)
+  }
+  
+  #flex {
+    display: flex;
+  }
+  
+  #page {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  
+  #sidebarR {
+    order: 2;
+    margin-left: 8px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  main {
+    border: 2px solid var(--link);
+    background-color: var(--darker-other);
+    padding: 15px;
+    flex: 1;
+    order: 1;
+  }
+  
+  aside {
+    background-color: var(--darker-other);
+    border: 2px solid var(--link);
+    width: 280px;
+    padding: 15px;
+  }
+  
+  nav {
+    background-color: var(--darker-other);
+    border: 2px solid var(--link);
+    margin-bottom: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  nav a {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--dark-other);
+    display: block;
+    width: 150px;
+  }
+  
+  #dropdown {
+    overflow: hidden;
+  }
+  
+  #dropdown #dropbtn {
+    color: var(--neon);
+    font-weight: bold;
+    text-decoration: underline;
+    border: none;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--dark-other);
+    font-family: inherit;
+    width: 150px;
+  }
+  
+  #dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    border-radius: 5px;
+    background-color: var(--dark-other);
+    z-index: 1;
+  }
+  
+  #dropdown-content a {
+    padding: 8px 0 8px;
+    font-size: 18px;
+  }
+  
+  .updates {
+    overflow: auto;
+    max-width: auto;
+    max-height: 160px;
+    border: 2px solid var(--link);
+    padding: 0 15px;
+  }
+  
+  .updates h2 {
+    padding: 0 5px;
+    max-width: 100%;
+    background-color: var(--link);
+  }
+  
+  #stylestyle form {
+    text-align: center;
+    background-color: var(--darker-other);
+    padding: 5px;
+    text-align: center
+  }
+  
+  #stylestyle select {
+    font-family: PixelOperatorMono;
+    font-weight: bold;
+    width: 100%;
+    padding: 5px;
+    margin: 5px auto;
+    background-color: var(--darker-other);
+    border: 2px solid var(--link);
+    color: var(--neon)
+  }
+  
+  #snippet {
+    font-size: 10px;
+    background-color: var(--darker-other);
+    border: 2px solid var(--link);
+    color: var(--neon);
+  }
+  
+  #dropdown:hover #dropbtn, #dropdown-content a:hover {
+     color: var(--link-other);
+  }
+  
+  #dropdown:hover #dropdown-content {
+     display: block;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    #flex {
+      flex-wrap: wrap;
+    }
+    main {
+      order: 1;
+    }
+    #sidebarR {
+      width: 100%;
+      order: 2;
+      margin-left: 0;
+      margin-top: 8px;
+    }
+    nav {
+      flex-wrap: wrap;
+    }
+    nav a, #dropdown {
+      margin-bottom: 10px;
+    }
+  }
+  
+  

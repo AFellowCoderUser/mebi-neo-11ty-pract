@@ -1,0 +1,23 @@
+:root {
+  --orange-link: #ffd068;
+  --orange-border: #c99c36;
+  --orange-dark: #ad862d;
+  --orange-darker: #72561a;
+  
+  --purple-neon: #ba51ff;
+  --purple-link: #9900ff;
+  --darkpurple: #2f186b;
+  --darkpurple-black: #130439;
+
+  /**/
+  --neon: var(--orange-link);
+  --link: var(--orange-border);
+  --dark: var(--orange-dark);
+  --darker: var(--orange-darker);
+  
+  --neon-other: var(--purple-neon);
+  --link-other: var(--purple-link);
+  --dark-other: var(--darkpurple);
+  --darker-other: var(--darkpurple-black);
+}
+

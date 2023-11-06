@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{title}}</title>
+        <!--<link rel="icon" type="image/x-icon" href="/placeholder.png">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:url" content="https://afellowu.neocities.org/">
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Mebi County"/>
+        <meta property="og:description" content="A place where I share the many stuff that I want to share. Enjoy your stay, in Mebi County."/>
+        <!--<meta property="og:image" content="https://afellowu.neocities.org/images/thumbnail.png" />
+        <meta property="twitter:card" content="summary_large_image">-->
+        <link rel="stylesheet" type="text/css" href="../../assets/css/mebi.css" />
+        <link rel="stylesheet" type="text/css" href="../../assets/css/base.css" />
+    </head>
+    <body>
+        <div id="page">
+            <img id="cssbanner" style="image-rendering:pixelated;max-width:100%;height:auto;margin-bottom:8px;" src="/assets/img/page_deco/banner.png">
+            {% include "../partials/navbar.njk" %}
+            <div id="flex">
+                {{ content | safe }}
+            </div>
+            {% include "../partials/footer.njk" %}
+        </div>
+    </body>
+</html>
