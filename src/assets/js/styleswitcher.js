@@ -12,7 +12,7 @@ function changeStyle(style, js) {
         style = localStorage.getItem("style");
         if (style == null) 
             style = "mebi";
-    document.querySelector("link[type='text/css']").setAttribute("href", "../../assets/css/" + style + ".css");
+    document.querySelector("link[type='text/css']").setAttribute("href", "/assets/css/styles/" + style + ".css");
     localStorage.setItem("style", style);
 
     if (js == null)
